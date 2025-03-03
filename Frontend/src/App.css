@@ -1,0 +1,207 @@
+/* App.css */
+
+/* Ensure the body and root container take full height */
+
+
+/* Use flexbox to layout the content and footer */
+html,body,#root{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the whole height of the screen */
+}   
+
+.left-panel {
+  height: 100%;
+   /* Smooth transition when changing background */
+}
+
+.dot-container {
+  bottom: 10%;  /* Position the dots near the bottom */
+  left: 50%;
+  display: flex;
+  gap: 20px; /* Space between dots */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 80px;
+  align-items: center;
+  
+}
+
+.dot {
+  width: 20px;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  height: 20px;
+  border-radius: 50%;  /* Make the dot circular */
+  background-color: rgb(255, 255, 255);  /* White with some transparency */
+  cursor: pointer;
+  transition: background-color 1s;
+}
+
+.dot:hover {
+  background-color: transparent;  
+  transform: scale(1.2);  /* small enlargement in the dot */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);/* Highlight karta hai dot ko jab uspe mouse ata hai tb */
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+.main-content{
+  height: 100%;
+  color: white;
+  flex: 1;
+  flex-direction: column;
+  transition: background-image 1s ease;
+  overflow-y: auto;
+  background-color: black;
+  
+}
+.main-content .row{
+  min-height: 100%;
+  flex:1;
+}
+.main-content .content-area{
+  align-items: center;
+  justify-content: center;
+  padding-top: 5%;
+  flex:1;
+  height: 100%;
+  width: 100%;
+}
+.signin-class {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* Centers content horizontally */
+  gap: 15px;             /* wont work if there is not the availabe space for items*/
+  height: 100%;
+  width: 100%;
+}
+
+.signin-class div {
+  display: flex;
+  flex-direction: row;  /* Align label and input on the same line */
+  justify-content: center;
+  align-items: center;  /* Vertically aligns the label and input */
+  width: 100%;
+  max-width: 400px; /* Optional: To prevent inputs from stretching too wide */
+}
+
+.signin-class label {
+  width: 75px;  /* Ensures consistent width for labels */
+}
+
+.signin-class input {
+  flex: 1;  /* Allows input field to take up remaining space */
+}
+.admin-class{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  width: 100%;
+}
+.signup-class{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+
+  align-items: center;
+
+}
+.signup-class div {
+  display: flex;
+  flex-direction: column;  /* Align label and input on the same line */
+  align-items: center;  /* Vertically aligns the label and input */
+  width: 100%;
+  max-width: 400px; /* Optional: To prevent inputs from stretching too wide */
+}
+.signin-class label{
+  width: 100;
+}
+.booking-class{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+}
+.booking-class label{
+
+  margin: 1%;
+
+}
+.booking-class input{
+  margin: 1%;
+
+}
+.booking-class button{
+  margin:8%;
+  margin-left: 30%;
+
+
+}
+.left-panel{
+
+ 
+  height: 100%;
+}
+.right-panel{
+
+  height: 100%;
+}
+footer hr{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+footer .reserved{
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+/* Remove space before the <hr> */
+.main-forgot{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.main-forgot label{
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  font-style: italic;
+  font-size: 30px;
+
+}
+
+.reset-class{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent !important;
+  height: 100%;
+  width: 100%;
+}
+.reset-class label{
+  width: 170px;
+  margin-top: 10px;
+}
+.reset-class input{
+  width: 200px;
+  margin-top: 10px;
+}
