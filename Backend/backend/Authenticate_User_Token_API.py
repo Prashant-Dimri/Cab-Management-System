@@ -1,6 +1,6 @@
 import jwt
 import json
-def authen(data,typ):#token,#type
+def AuthenticateToken(data,typ):#token,#type
     try:
         secret_key='sadb2h1hb2b3mn2b3mn2b1jb32hb321nm2j3njn3'
         decoded_token=jwt.decode(data, secret_key, algorithms='HS256')

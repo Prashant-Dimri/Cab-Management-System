@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios';
-import Success from './Success';
+import BookingConfirmed from './BookingConfirmed';
 const Booking=()=>{
   const [status,setStatus]=useState(0);
   const [message,setMessage]=useState('');
@@ -52,7 +52,7 @@ const Booking=()=>{
       </div>
     )}
     {status===1 &&(
-      <Success />
+      <BookingConfirmed />
     )}
     {status===2 &&(
       <p>{message}</p>

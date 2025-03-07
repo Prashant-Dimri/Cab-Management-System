@@ -4,7 +4,7 @@ import SelectCab from './SelectCab';
 import Admin from './Admin';
 import ForgotPassword from './ForgotPassword';
 import Button from 'react-bootstrap/Button';
-const First = ({setState}) => {
+const SigninPage = ({setState}) => {
   const [status, setStatus]=useState(1);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -93,4 +93,4 @@ const First = ({setState}) => {
       </div>)};
   
 
-export default First;
+export default SigninPage;

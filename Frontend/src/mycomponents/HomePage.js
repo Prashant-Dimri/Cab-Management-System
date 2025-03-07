@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import First from './First';
+import SigninPage from './SigninPage';
 import Signup from './Signup';
 import Button from 'react-bootstrap/Button';
-const Firstt =({setState}) =>{
+const HomePage =({setState}) =>{
     const [Currpage,Setcurrpage]=useState('');
     const handlepage=(page)=>{
         Setcurrpage(page);};
@@ -22,9 +22,9 @@ const Firstt =({setState}) =>{
         </div>
     )}
     <div style={{height:"100%",width:"100%"}}>
-    {Currpage==='Login' && <First setState={setState}/>}
+    {Currpage==='Login' && <SigninPage setState={setState}/>}
     {Currpage==='Signup' && <Signup set={setState}/>}
     </div>
     </div>
 )};
-export default Firstt;
+export default HomePage;

@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react'
-import First from './First';
+import HomePage from './SigninPage';
 const Signup=({set})=>{
   const [state,setState]=useState(0);
   const [message,setMessage]=useState('');
@@ -100,7 +100,7 @@ const Signup=({set})=>{
       </div>
       )}
       {state===1 &&(
-        <First setState={set}/>
+        <HomePage setState={set}/>
       )}
       {state===2 &&(
         <div>

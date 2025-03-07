@@ -1,6 +1,6 @@
 import json
-from load_env_file import get_session,User
-def fp(link_email):
+from Load_Env_File import get_session,User
+def ForgotPassword(link_email):
     try:
         session=get_session()
         user = session.query(User).filter_by(email=link_email).first()

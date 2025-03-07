@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Firstt from './mycomponents/Firstt';
+import HomePage from './mycomponents/HomePage';
 import Header from './mycomponents/Header';
 import Footer from './mycomponents/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -36,7 +36,7 @@ function App() {
               <div className="col-md-10 col-12">
                 <div className="content-area">
                   <Routes>
-                    <Route path="/" element={<Firstt setState={setState}/>} />
+                    <Route path="/" element={<HomePage setState={setState}/>} />
                     <Route path="/reset/:uuid" element={<Reset />} />
                   </Routes>
                 </div>
